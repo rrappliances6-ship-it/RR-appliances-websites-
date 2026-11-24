@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RR Appliances & Modular Kitchen | Luxury Modular Kitchens & Home Interiors in Haldwani, Kumaon</title>
+  <meta name="description" content="RR Appliances & Modular Kitchen crafts bespoke modular kitchens, customized wardrobes, designer bathroom vanities & complete home interiors in Haldwani and across all 6 districts of Kumaon, Uttarakhand since 2005." />
+  <meta name="keywords" content="Modular Kitchen Haldwani, Luxury Kitchen Kumaon, Home Interior Designer Haldwani, Wardrobes Haldwani, Bathroom Vanities Uttarakhand, Nainital, Almora, Bageshwar, Champawat, Pithoragarh, Udham Singh Nagar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rrapplianceshaldwani.in/" />
+  <meta name="google-site-verification" content="RR_APPLIANCES_HALDWANI_GSC_VERIFICATION" />
+
+  <!-- Google Analytics 4 (GA4) + Google Business Profile (GBP) Conversion & Attribution Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1C85VEXCE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.RR_GA4_ID = localStorage.getItem('rr_ga4_measurement_id') || 'G-J1C85VEXCE';
+    gtag('js', new Date());
+    gtag('config', window.RR_GA4_ID, {
+      send_page_view: true,
+      custom_map: {
+        dimension1: 'traffic_source_gbp',
+        dimension2: 'kumaon_district'
+      }
+    });
+
+    // Detect visitors arriving from Google Business Profile (GBP) UTM links or Google Search/Maps
+    (function trackGBPAttribution() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const utmSource = (params.get('utm_source') || '').toLowerCase();
+        const utmMedium = (params.get('utm_medium') || '').toLowerCase();
+        const utmCampaign = (params.get('utm_campaign') || '').toLowerCase();
+        const ref = (document.referrer || '').toLowerCase();
+
+        const isFromGBP =
+          utmSource.includes('google') ||
+          utmSource.includes('gbp') ||
+          utmMedium.includes('gbp') ||
+          utmCampaign.includes('gbp') ||
+          utmCampaign.includes('business_profile') ||
+          ref.includes('google.');
+
+        const attribution = {
+          source: isFromGBP ? 'Google Business Profile / Search' : (utmSource || 'Direct Website'),
+          medium: utmMedium || (ref.includes('google.') ? 'organic_local' : 'direct'),
+          campaign: utmCampaign || 'haldwani_local_seo',
+          timestamp: new Date().toISOString()
+        };
+        sessionStorage.setItem('rr_gbp_attribution', JSON.stringify(attribution));
+
+        if (isFromGBP) {
+          gtag('event', 'gbp_profile_visit', {
+            event_category: 'Google Business Profile',
+            event_label: attribution.campaign,
+            business_location: 'Haldwani, Uttarakhand'
+          });
+        }
+      } catch (e) {}
+    })();
+
+    // Global helper to log GA4 & Google Business Profile local conversion events
+    window.trackGBPConversion = function(actionName, label, meta) {
+      try {
+        const attr = JSON.parse(sessionStorage.getItem('rr_gbp_attribution') || '{}');
+        gtag('event', actionName, {
+          event_category: 'GBP_Local_Conversion',
+          event_label: label || actionName,
+          traffic_source_gbp: attr.source || 'Direct Website',
+          kumaon_district: (meta && meta.district) || 'Haldwani / Nainital',
+          value: (meta && meta.value) || 1
+        });
+        const logs = JSON.parse(localStorage.getItem('rr_gbp_events') || '[]');
+        logs.unshift({
+          id: 'EVT-' + Date.now(),
+          action: actionName,
+          label: label || actionName,
+          source: attr.source || 'Direct Website',
+          time: new Date().toLocaleString('en-IN')
+        });
+        localStorage.setItem('rr_gbp_events', JSON.stringify(logs.slice(0, 50)));
+      } catch (e) {}
+    };
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            warmwhite: '#FFFFFF',
+            beige: '#F2ECE1',
+            sand: '#E6DEC8',
+            champagne: '#C5A059',
+            champagnedark: '#A6823C',
+            charcoal: '#1E1D1B',
+            charcoalsoft: '#4A4742'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- LocalBusiness JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "RR Appliances & Modular Kitchen",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85",
+    "telephone": "+91-9720666771",
+    "email": "rrappliances6@gmail.com",
+    "foundingDate": "2005",
+    "priceRange": "₹₹-₹₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Opposite Saraswati Shishu Vidya Mandir, Lamachaur",
+      "addressLocality": "Haldwani",
+      "addressRegion": "Uttarakhand",
+      "postalCode": "263139",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      "Haldwani", "Nainital", "Almora", "Bageshwar", "Champawat", "Pithoragarh", "Udham Singh Nagar", "Kumaon Division"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "20:30"
+    }
+  }
+  </script>
+
+  <style>
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 34s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    .luxury-shadow {
+      box-shadow: 0 20px 50px -15px rgba(30, 29, 27, 0.08);
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #C5A059 0%, #DFBE7B 50%, #A6823C 100%);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-charcoal font-sans antialiased selection:bg-champagne/25 selection:text-charcoal overflow-x-hidden">
+
+  <!-- 1. TOP ANNOUNCEMENT MOVING STRIP -->
+  <div class="bg-charcoal text-ivory text-xs sm:text-sm py-2.5 overflow-hidden border-b border-champagne/30 relative z-50">
+    <div class="animate-marquee flex items-center space-x-10 whitespace-nowrap" id="announcement-marquee">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </div>
+
+  <!-- 2. STICKY LUXURY HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-sand/80 transition-all duration-300" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group shrink-0">
+          <div class="w-11 h-11 rounded-xl gold-gradient flex items-center justify-center text-charcoal font-serif font-bold text-xl shadow-md">
+            RR
+          </div>
+          <div class="leading-tight">
+            <span class="block font-serif text-lg sm:text-xl font-bold tracking-wide text-charcoal group-hover:text-champagnedark transition">
+              RR Appliances
+            </span>
+            <span class="block text-[10px] sm:text-xs uppercase tracking-[0.22em] text-champagnedark font-semibold">
+              &amp; Modular Kitchen
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex items-center space-x-5 text-[13px] font-medium text-charcoalsoft">
+          <a href="#home" class="hover:text-champagnedark transition">Home</a>
+          <a href="#kitchen-designs" class="hover:text-champagnedark transition">Kitchen Designs</a>
+          <a href="#wardrobes" class="hover:text-champagnedark transition">Wardrobes</a>
+          <a href="#vanities" class="hover:text-champagnedark transition">Vanities</a>
+          <a href="#materials" class="hover:text-champagnedark transition">Materials</a>
+          <a href="#projects" class="hover:text-champagnedark transition">Projects</a>
+          <a href="#locations" class="hover:text-champagnedark transition">Kumaon Region</a>
+          <a href="#about" class="hover:text-champagnedark transition">About Us</a>
+          <a href="#contact" class="hover:text-champagnedark transition">Contact</a>
+        </nav>
+
+        <!-- Action Buttons: Instagram, Call Now, Get Free Consultation, Mobile Menu -->
+        <div class="flex items-center gap-2 sm:gap-2.5">
+          <!-- Instagram Logo Link -->
+          <a href="https://www.instagram.com/rrin.terior?evlk=MWN4ZGtodHhtcXpmMA==" target="_blank" rel="noopener noreferrer" aria-label="Follow RR Appliances & Modular Kitchen on Instagram"
+             onclick="window.trackGBPConversion('instagram_click', 'Header Instagram')"
+             class="w-10 h-10 rounded-full border border-sand bg-warmwhite hover:border-champagne hover:text-champagnedark text-charcoal flex items-center justify-center transition shadow-sm"
+             title="Instagram">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <!-- Direct Click-to-Call Button -->
+          <a href="tel:+919720666771"
+             onclick="window.trackGBPConversion('call_now_click', 'Header Call Button')"
+             class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-full border border-charcoal/20 bg-warmwhite hover:bg-charcoal hover:text-ivory text-charcoal font-semibold text-xs sm:text-sm transition shadow-sm">
+            <svg class="w-4 h-4 text-champagnedark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span class="hidden sm:inline">Call Now</span>
+            <span class="sm:hidden">Call</span>
+          </a>
+
+          <!-- Get Free Consultation CTA -->
+          <a href="#consultation"
+             onclick="window.trackGBPConversion('consultation_cta_click', 'Header Consultation CTA')"
+             class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full gold-gradient text-charcoal font-semibold text-xs sm:text-sm shadow-md hover:shadow-lg hover:brightness-105 transition">
+            <span>Get Free Consultation</span>
+          </a>
+
+          <!-- Mobile Drawer Toggle -->
+          <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="xl:hidden p-2.5 rounded-xl border border-sand bg-warmwhite text-charcoal hover:border-champagne transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-warmwhite border-t border-sand px-6 py-6 space-y-4 shadow-xl">
+      <div class="grid grid-cols-2 gap-3 text-sm font-medium text-charcoal">
+        <a href="#home" class="mobile-link py-2 hover:text-champagnedark">Home</a>
+        <a href="#kitchen-designs" class="mobile-link py-2 hover:text-champagnedark">Kitchen Designs</a>
+        <a href="#wardrobes" class="mobile-link py-2 hover:text-champagnedark">Modular Wardrobes</a>
+        <a href="#vanities" class="mobile-link py-2 hover:text-champagnedark">Bathroom Vanities</a>
+        <a href="#home-interiors" class="mobile-link py-2 hover:text-champagnedark">Home Interiors</a>
+        <a href="#materials" class="mobile-link py-2 hover:text-champagnedark">Materials &amp; Finishes</a>
+        <a href="#projects" class="mobile-link py-2 hover:text-champagnedark">Our Projects</a>
+        <a href="#locations" class="mobile-link py-2 hover:text-champagnedark">Kumaon 6 Districts</a>
+        <a href="#about" class="mobile-link py-2 hover:text-champagnedark">About Us</a>
+        <a href="#contact" class="mobile-link py-2 hover:text-champagnedark">Contact</a>
+      </div>
+      <div class="pt-3 border-t border-sand flex flex-col sm:flex-row gap-3">
+        <a href="tel:+919720666771" class="flex-1 text-center py-3 rounded-full border border-charcoal text-charcoal font-semibold text-sm">
+          Call Now: +91 97206 66771
+        </a>
+        <a href="#consultation" class="mobile-link flex-1 text-center py-3 rounded-full gold-gradient text-charcoal font-semibold text-sm">
+          Get Free 3D Consultation
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. LUXURY HOMEPAGE HERO SECTION -->
+  <section id="home" class="relative min-h-[88vh] flex items-center overflow-hidden bg-charcoal">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85"
+         alt="Luxury Modular Kitchen Studio in Haldwani Kumaon by RR Appliances"
+         class="absolute inset-0 w-full h-full object-cover object-center opacity-55 scale-105 transition-transform duration-1000" />
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/75 to-charcoal/35"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ivory/10 backdrop-blur-md border border-champagne/40 text-champagne text-xs uppercase tracking-[0.2em] font-semibold mb-6">
+          <span>Haldwani • Kumaon Architectural Studio Since 2005</span>
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-ivory leading-[1.1] tracking-tight mb-6">
+          Designing Beautiful Kitchens. <span class="text-champagne italic font-normal">Creating Better Living.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg lg:text-xl text-ivory/85 font-light leading-relaxed mb-8 max-w-2xl">
+          Premium Modular Kitchens, Customized Wardrobes, Designer Bathroom Vanities &amp; Complete Home Interiors in Haldwani and across all 6 districts of Kumaon, Uttarakhand.
+        </p>
+
+        <!-- Hero Action Buttons -->
+        <div class="flex flex-wrap items-center gap-4 mb-10">
+          <a href="#kitchen-designs"
+             class="px-7 py-4 rounded-full gold-gradient text-charcoal font-semibold text-sm sm:text-base shadow-xl hover:brightness-105 transition">
+            Explore Kitchen Designs
+          </a>
+          <a href="#consultation"
+             onclick="window.trackGBPConversion('hero_consultation_click', 'Hero Get Free Consultation')"
+             class="px-7 py-4 rounded-full bg-ivory/10 hover:bg-ivory hover:text-charcoal text-ivory border border-ivory/40 backdrop-blur-md font-semibold text-sm sm:text-base transition">
+            Get Free Consultation
+          </a>
+          <a href="tel:+919720666771"
+             onclick="window.trackGBPConversion('hero_call_click', 'Hero Call Now')"
+             class="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-charcoal/80 hover:bg-champagne hover:text-charcoal text-ivory border border-champagne/60 font-semibold text-sm sm:text-base transition">
+            <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span>Call Now: +91 97206 66771</span>
+          </a>
+        </div>
+
+        <!-- Trust Highlights & Kumaon 6 Districts Strip -->
+        <div class="pt-6 border-t border-ivory/15 space-y-4">
+          <p class="text-xs sm:text-sm uppercase tracking-[0.18em] text-champagne font-semibold">
+            18+ Years of Kitchen Experience &nbsp;|&nbsp; 3000+ Projects Completed/Serviced &nbsp;|&nbsp; Free 3D Kitchen Design
+          </p>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs text-ivory/70 font-medium mr-1">Serving All 6 Kumaon Districts:</span>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Nainital (Haldwani HQ)</a>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Almora</a>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Bageshwar</a>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Champawat</a>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Pithoragarh</a>
+            <a href="#locations" class="px-3 py-1 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory text-xs border border-ivory/20 transition">Udham Singh Nagar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MODULAR KITCHEN DESIGNS (8 ARCHITECTURAL CATEGORIES) -->
+  <section id="kitchen-designs" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Architectural Culinary Spaces</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Bespoke Modular Kitchen Designs
+          </h2>
+        </div>
+        <p class="text-charcoalsoft text-sm sm:text-base max-w-md">
+          Ergonomically engineered layouts crafted with German hardware, waterproof BWP cores, and refined luxury finishes tailored to Kumaon homes.
+        </p>
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-4 mb-8" id="kitchen-filter-bar">
+        <button data-filter="all" class="kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-charcoal text-ivory transition shrink-0">All 8 Layouts</button>
+        <button data-filter="compact" class="kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-beige text-charcoal hover:bg-sand transition shrink-0">Compact &amp; Urban</button>
+        <button data-filter="spacious" class="kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-beige text-charcoal hover:bg-sand transition shrink-0">Spacious &amp; Villa</button>
+        <button data-filter="luxury" class="kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-beige text-charcoal hover:bg-sand transition shrink-0">Luxury Flagship</button>
+      </div>
+
+      <!-- Kitchen Designs Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7" id="kitchen-designs-grid"></div>
+    </div>
+  </section>
+
+  <!-- 5. DEDICATED MODULAR WARDROBES SECTION -->
+  <section id="wardrobes" class="py-20 lg:py-28 bg-beige/60 border-y border-sand/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Bespoke Closet Architecture</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Luxury Modular Wardrobes
+          </h2>
+        </div>
+        <p class="text-charcoalsoft text-sm sm:text-base max-w-md">
+          Floor-to-ceiling sliding wardrobes, walk-in closets, and fluted-glass aluminium profile cabinetry designed for maximum organization.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="wardrobes-grid"></div>
+    </div>
+  </section>
+
+  <!-- 6. DEDICATED DESIGNER BATHROOM VANITIES SECTION -->
+  <section id="vanities" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Spa-Inspired Bath Cabinetry</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Designer Bathroom Vanities
+          </h2>
+        </div>
+        <p class="text-charcoalsoft text-sm sm:text-base max-w-md">
+          100% moisture-proof HDHMR &amp; BWP marine-grade floating vanities topped with quartz counters and backlit LED mirrors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="vanities-grid"></div>
+    </div>
+  </section>
+
+  <!-- 7. CUSTOMIZED HOME INTERIORS -->
+  <section id="home-interiors" class="py-20 lg:py-28 bg-beige/55 border-y border-sand/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Turnkey Residential Interiors</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+          Customized Home Interiors
+        </h2>
+        <p class="text-charcoalsoft text-sm sm:text-base">
+          Harmonious living spaces crafted with unified woodgrains, concealed ambient lighting, and custom storage across every room.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="home-interiors-grid"></div>
+    </div>
+  </section>
+
+  <!-- 8. INTERACTIVE KITCHEN MATERIALS & FINISHES -->
+  <section id="materials" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Engineered Durability</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Kitchen Materials &amp; Finishes
+          </h2>
+        </div>
+        <p class="text-charcoalsoft text-sm sm:text-base max-w-md">
+          Select any surface finish or structural board below to inspect its real photograph, texture grade, and performance benefits.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Material Selector List -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-3" id="materials-selector"></div>
+
+        <!-- Active Material Detail Showcase -->
+        <div class="lg:col-span-7 bg-warmwhite rounded-3xl border border-sand p-6 sm:p-8 luxury-shadow flex flex-col justify-between" id="material-detail-panel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. OUR BRAND PARTNERS -->
+  <section id="partners" class="py-20 bg-charcoal text-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] text-champagne font-semibold block mb-2">Authorized Hardware &amp; Board Alliances</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ivory mb-4">
+          Trusted Brands. Quality Materials. Better Kitchens.
+        </h2>
+        <p class="text-ivory/75 text-sm sm:text-base">
+          We partner exclusively with India’s and Europe’s premier hardware, plywood, and kitchen appliance manufacturers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="partners-grid"></div>
+    </div>
+  </section>
+
+  <!-- 10. OUR WORKING PROCESS -->
+  <section id="process" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Precision Studio Workflow</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+          Our 6-Step Working Process
+        </h2>
+        <p class="text-charcoalsoft text-sm sm:text-base">
+          From initial consultation in Haldwani to final precision installation anywhere in Kumaon.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7" id="process-grid"></div>
+    </div>
+  </section>
+
+  <!-- 11. SPECIAL OFFERS & PROMOTIONS -->
+  <section id="offers" class="py-20 bg-beige/70 border-y border-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Transparent Studio Privileges</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Special Offers &amp; Promotions
+          </h2>
+        </div>
+        <p class="text-charcoalsoft text-xs sm:text-sm max-w-md">
+          *All offers are subject to standard layout dimensions, hardware tier selection, and site feasibility across Kumaon.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="offers-grid"></div>
+    </div>
+  </section>
+
+  <!-- 12. OUR COMPLETED PROJECTS -->
+  <section id="projects" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Real Kumaon Residences</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Our Completed Projects
+          </h2>
+        </div>
+        <div class="flex flex-wrap gap-2" id="project-filter-bar">
+          <button data-cat="All" class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-charcoal text-ivory transition">All Projects</button>
+          <button data-cat="Modular Kitchens" class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-beige text-charcoal hover:bg-sand transition">Modular Kitchens</button>
+          <button data-cat="Wardrobes" class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-beige text-charcoal hover:bg-sand transition">Wardrobes</button>
+          <button data-cat="TV Units" class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-beige text-charcoal hover:bg-sand transition">TV Units</button>
+          <button data-cat="Complete Home Interiors" class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-beige text-charcoal hover:bg-sand transition">Complete Home Interiors</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- 13. OUR SERVICE LOCATIONS (ALL 6 DISTRICTS OF KUMAON, UTTARAKHAND) -->
+  <section id="locations" class="py-20 lg:py-28 bg-beige/65 border-y border-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Complete Kumaon Division Coverage</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Serving Homes Across Kumaon, Uttarakhand.
+          </h2>
+        </div>
+        <div class="bg-warmwhite border border-champagne/40 rounded-2xl px-5 py-3.5 shadow-sm">
+          <p class="text-xs uppercase tracking-wider text-champagnedark font-bold">Flagship Experience Center</p>
+          <p class="text-sm font-semibold text-charcoal">Haldwani (Nainital District) — Serving All 6 Kumaon Districts</p>
+        </div>
+      </div>
+
+      <!-- Simultaneous 6-District Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="locations-grid"></div>
+    </div>
+  </section>
+
+  <!-- 14. GOOGLE REVIEWS & CUSTOMER TRUST -->
+  <section id="reviews" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-warmwhite border border-sand mb-3 shadow-sm">
+            <span class="text-amber-500 text-base">★★★★★</span>
+            <span class="text-xs font-bold text-charcoal">4.9 / 5.0 Verified Google Business Profile Rating</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+            Homeowner Reviews Across Kumaon
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="https://g.page/r/CS-qBeFk9yhaEBE/review" target="_blank" rel="noopener noreferrer"
+             onclick="window.trackGBPConversion('gbp_view_reviews', 'Reviews Section View Google Reviews')"
+             class="px-5 py-3 rounded-full border border-charcoal text-charcoal hover:bg-charcoal hover:text-ivory text-xs sm:text-sm font-semibold transition">
+            View Google Profile
+          </a>
+          <a href="https://g.page/r/CS-qBeFk9yhaEBE/review" target="_blank" rel="noopener noreferrer"
+             onclick="window.trackGBPConversion('gbp_write_review', 'Reviews Section Write a Review')"
+             class="px-5 py-3 rounded-full gold-gradient text-charcoal text-xs sm:text-sm font-semibold shadow-md hover:brightness-105 transition">
+            Write a Review
+          </a>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-charcoalsoft mb-8">
+        RR Appliances would love your feedback. Post a review to our profile:
+        <a href="https://g.page/r/CS-qBeFk9yhaEBE/review" target="_blank" rel="noopener noreferrer"
+           onclick="window.trackGBPConversion('gbp_feedback_link', 'Reviews Feedback Prompt')"
+           class="text-champagnedark font-semibold underline hover:text-charcoal transition">
+          https://g.page/r/CS-qBeFk9yhaEBE/review
+        </a>
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- 15. ABOUT RR APPLIANCES & MODULAR KITCHEN -->
+  <section id="about" class="py-20 lg:py-28 bg-beige/60 border-y border-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Craftsmanship Collage -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
+               alt="Precision Modular Kitchen Craftsmanship in Haldwani"
+               class="col-span-2 h-64 sm:h-72 w-full object-cover rounded-3xl luxury-shadow" />
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=85"
+               alt="Luxury Kitchen Hardware & Storage Detailing"
+               class="h-44 sm:h-52 w-full object-cover rounded-2xl luxury-shadow" />
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=85"
+               alt="Bespoke Home Interiors by RR Appliances"
+               class="h-44 sm:h-52 w-full object-cover rounded-2xl luxury-shadow" />
+        </div>
+
+        <!-- Brand Story -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block">Our Heritage Since 2005</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal leading-tight">
+            Crafting Functional and Beautiful Kitchens Since 2005.
+          </h2>
+          <p class="text-charcoalsoft text-base leading-relaxed">
+            <strong>RR Appliances &amp; Modular Kitchen</strong> provides modern modular kitchen solutions, designer wardrobes, bathroom vanities, and customized home interiors in Haldwani and across all 6 districts of Kumaon. We focus on quality materials, ergonomic layouts, precision factory installation, and lasting customer satisfaction.
+          </p>
+          <div class="grid grid-cols-3 gap-4 pt-2">
+            <div class="bg-warmwhite p-4 rounded-2xl border border-sand">
+              <span class="block font-serif text-3xl font-bold text-champagnedark">18+</span>
+              <span class="text-xs text-charcoalsoft font-medium">Years Experience</span>
+            </div>
+            <div class="bg-warmwhite p-4 rounded-2xl border border-sand">
+              <span class="block font-serif text-3xl font-bold text-champagnedark">3000+</span>
+              <span class="text-xs text-charcoalsoft font-medium">Projects Served</span>
+            </div>
+            <div class="bg-warmwhite p-4 rounded-2xl border border-sand">
+              <span class="block font-serif text-3xl font-bold text-champagnedark">6</span>
+              <span class="text-xs text-charcoalsoft font-medium">Kumaon Districts</span>
+            </div>
+          </div>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="#consultation" class="px-6 py-3.5 rounded-full gold-gradient text-charcoal font-semibold text-sm shadow-md">
+              Book Showroom Visit
+            </a>
+            <a href="tel:+919720666771" class="px-6 py-3.5 rounded-full border border-charcoal text-charcoal font-semibold text-sm hover:bg-charcoal hover:text-ivory transition">
+              Speak With Senior Designer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. FREE CONSULTATION & LEAD GENERATION FORM -->
+  <section id="consultation" class="py-20 lg:py-28 bg-ivory">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-warmwhite rounded-3xl border border-sand p-6 sm:p-10 lg:p-12 luxury-shadow">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs uppercase tracking-[0.25em] text-champagnedark font-semibold block mb-2">Complimentary 3D Design &amp; Estimate</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal mb-3">
+            Request Your Free Consultation
+          </h2>
+          <p class="text-charcoalsoft text-sm sm:text-base">
+            Share your floor plan or room details. Our Haldwani design team will prepare a tailored 3D layout &amp; quotation and connect directly via WhatsApp or Email.
+          </p>
+        </div>
+
+        <form id="consultation-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="lead-name" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Full Name *</label>
+              <input type="text" id="lead-name" required placeholder="e.g., Rajesh Joshi"
+                     class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm" />
+            </div>
+            <div>
+              <label for="lead-phone" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Mobile / WhatsApp Number *</label>
+              <input type="tel" id="lead-phone" required placeholder="e.g., 98370XXXXX"
+                     class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label for="lead-city" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">City / Kumaon District *</label>
+              <input type="text" id="lead-city" required placeholder="Haldwani, Nainital, Almora..."
+                     class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm" />
+            </div>
+            <div>
+              <label for="lead-service" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Required Service *</label>
+              <select id="lead-service" class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm">
+                <option value="Modular Kitchen">Modular Kitchen</option>
+                <option value="Modular Wardrobe">Modular Wardrobe</option>
+                <option value="Designer Bathroom Vanity">Designer Bathroom Vanity</option>
+                <option value="Modern TV Unit">Modern TV Unit</option>
+                <option value="Complete Home Interiors">Complete Home Interiors</option>
+              </select>
+            </div>
+            <div>
+              <label for="lead-kitchen-type" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Kitchen / Layout Type</label>
+              <select id="lead-kitchen-type" class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm">
+                <option value="L-Shaped Kitchen">L-Shaped Kitchen</option>
+                <option value="U-Shaped Kitchen">U-Shaped Kitchen</option>
+                <option value="Parallel Kitchen">Parallel Kitchen</option>
+                <option value="Straight Kitchen">Straight Kitchen</option>
+                <option value="Island Kitchen">Island Kitchen</option>
+                <option value="Open Kitchen">Open Kitchen</option>
+                <option value="Sliding / Walk-in Wardrobe">Sliding / Walk-in Wardrobe</option>
+                <option value="Floating Bathroom Vanity">Floating Bathroom Vanity</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="lead-budget" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Approximate Budget</label>
+              <select id="lead-budget" class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm">
+                <option value="₹65,000 – ₹1.25 Lakh">₹65,000 – ₹1.25 Lakh</option>
+                <option value="₹1.25 Lakh – ₹2.50 Lakh">₹1.25 Lakh – ₹2.50 Lakh</option>
+                <option value="₹2.50 Lakh – ₹5.00 Lakh">₹2.50 Lakh – ₹5.00 Lakh</option>
+                <option value="₹5.00 Lakh+ (Complete Home)">₹5.00 Lakh+ (Complete Home)</option>
+              </select>
+            </div>
+            <div>
+              <label for="lead-photo" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Upload Kitchen / Room Photograph (Optional)</label>
+              <input type="file" id="lead-photo" accept="image/*"
+                     class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-sand text-xs file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:bg-champagne/25 file:text-charcoal file:font-semibold" />
+              <div id="photo-preview-box" class="hidden mt-2 flex items-center gap-2 text-xs text-champagnedark font-medium">
+                <span id="photo-file-name"></span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="lead-notes" class="block text-xs uppercase tracking-wider font-semibold text-charcoal mb-2">Additional Requirements / Selected Offer</label>
+            <textarea id="lead-notes" rows="3" placeholder="Tell us about your preferred finish (Acrylic, PU, Laminate), appliances, or timeline..."
+                      class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-sand focus:border-champagne focus:outline-none text-sm"></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full py-4 rounded-full gold-gradient text-charcoal font-bold text-base shadow-lg hover:brightness-105 transition">
+            Get My Free Consultation
+          </button>
+        </form>
+
+        <!-- Submission Confirmation Box -->
+        <div id="form-success-box" class="hidden mt-8 p-6 rounded-2xl bg-beige border border-champagne/50 text-center space-y-4">
+          <h3 class="font-serif text-2xl font-bold text-charcoal">Thank You! Your Design Enquiry is Confirmed.</h3>
+          <p class="text-sm text-charcoalsoft" id="form-success-summary"></p>
+          <div class="flex flex-wrap justify-center gap-3 pt-2">
+            <a id="whatsapp-direct-link" href="#" target="_blank" rel="noopener noreferrer"
+               class="px-6 py-3 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold transition">
+              Send Instant Details on WhatsApp
+            </a>
+            <a id="gmail-direct-link" href="mailto:rrappliances6@gmail.com"
+               class="px-6 py-3 rounded-full bg-charcoal hover:bg-charcoalsoft text-ivory text-sm font-semibold transition">
+              Email Enquiry to rrappliances6@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. CONTACT & SHOWROOM LOCATION SECTION -->
+  <section id="contact" class="py-20 bg-charcoal text-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] text-champagne font-semibold block">Visit Our Haldwani Experience Studio</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ivory">
+            RR Appliances &amp; Modular Kitchen
+          </h2>
+          <div class="space-y-3 text-sm sm:text-base text-ivory/85">
+            <p><strong class="text-champagne">Showroom Address:</strong> Opposite Saraswati Shishu Vidya Mandir, Lamachaur, Haldwani, Uttarakhand 263139</p>
+            <p><strong class="text-champagne">Phone &amp; WhatsApp:</strong> <a href="tel:+919720666771" class="underline hover:text-champagne">+91 97206 66771</a></p>
+            <p><strong class="text-champagne">Official Email (Gmail):</strong> <a href="mailto:rrappliances6@gmail.com" class="underline hover:text-champagne">rrappliances6@gmail.com</a></p>
+            <p><strong class="text-champagne">Studio Hours:</strong> Monday – Sunday, 9:00 AM – 8:30 PM</p>
+            <p><strong class="text-champagne">Service Region:</strong> Haldwani &amp; All 6 Districts of Kumaon (Nainital, Almora, Bageshwar, Champawat, Pithoragarh, Udham Singh Nagar)</p>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="tel:+919720666771"
+               onclick="window.trackGBPConversion('contact_call_now', 'Contact Section Call Now')"
+               class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full gold-gradient text-charcoal font-bold text-sm shadow-lg">
+              <span>Call Now: +91 97206 66771</span>
+            </a>
+            <a href="https://wa.me/919720666771?text=Hello%20RR%20Appliances%20%26%20Modular%20Kitchen%2C%20I%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener noreferrer"
+               onclick="window.trackGBPConversion('contact_whatsapp', 'Contact Section WhatsApp')"
+               class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition">
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="mailto:rrappliances6@gmail.com?subject=Modular%20Kitchen%20%26%20Interior%20Enquiry"
+               onclick="window.trackGBPConversion('contact_gmail', 'Contact Section Gmail')"
+               class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-ivory/10 hover:bg-ivory hover:text-charcoal text-ivory border border-ivory/25 font-semibold text-sm transition">
+              <span>Email Us</span>
+            </a>
+            <a href="https://www.instagram.com/rrin.terior?evlk=MWN4ZGtodHhtcXpmMA==" target="_blank" rel="noopener noreferrer"
+               onclick="window.trackGBPConversion('contact_instagram', 'Contact Section Instagram')"
+               class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-ivory border border-ivory/25 font-semibold text-sm transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden border border-champagne/30 shadow-2xl h-80 sm:h-96 bg-charcoalsoft">
+            <iframe
+              title="RR Appliances & Modular Kitchen Lamachaur Haldwani Google Map"
+              src="https://www.google.com/maps?q=Lamachaur,+Haldwani,+Uttarakhand&output=embed"
+              class="w-full h-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mt-3 flex justify-between items-center text-xs text-ivory/70">
+            <span>Lamachaur, Haldwani, Uttarakhand</span>
+            <a href="https://maps.google.com/?q=Lamachaur,+Haldwani,+Uttarakhand" target="_blank" rel="noopener noreferrer"
+               onclick="window.trackGBPConversion('gbp_get_directions', 'Contact Get Directions')"
+               class="text-champagne underline font-semibold">
+              Open in Google Maps &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18. FOOTER -->
+  <footer class="bg-[#151412] text-ivory/80 border-t border-ivory/10 pt-16 pb-24 sm:pb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-ivory/10">
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl gold-gradient flex items-center justify-center text-charcoal font-serif font-bold text-lg">RR</div>
+            <div>
+              <span class="block font-serif text-lg font-bold text-ivory">RR Appliances</span>
+              <span class="block text-[10px] uppercase tracking-[0.2em] text-champagne">&amp; Modular Kitchen</span>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed text-ivory/70">
+            Modern Kitchens. Beautiful Living. Crafting luxury modular kitchens, wardrobes, bathroom vanities &amp; home interiors in Haldwani and across Kumaon since 2005.
+          </p>
+          <div class="flex items-center gap-3 pt-1">
+            <a href="https://www.instagram.com/rrin.terior?evlk=MWN4ZGtodHhtcXpmMA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+               class="w-9 h-9 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal flex items-center justify-center transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="mailto:rrappliances6@gmail.com" aria-label="Gmail"
+               class="px-3.5 py-2 rounded-full bg-ivory/10 hover:bg-champagne hover:text-charcoal text-xs font-medium transition">
+              rrappliances6@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h3 class="font-serif text-lg font-bold text-ivory mb-4">Solutions &amp; Designs</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#kitchen-designs" class="hover:text-champagne transition">Modular Kitchen Designs</a></li>
+            <li><a href="#wardrobes" class="hover:text-champagne transition">Luxury Modular Wardrobes</a></li>
+            <li><a href="#vanities" class="hover:text-champagne transition">Designer Bathroom Vanities</a></li>
+            <li><a href="#home-interiors" class="hover:text-champagne transition">Customized Home Interiors</a></li>
+            <li><a href="#materials" class="hover:text-champagne transition">Materials &amp; Finishes</a></li>
+            <li><a href="#projects" class="hover:text-champagne transition">Completed Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Kumaon Service Districts -->
+        <div>
+          <h3 class="font-serif text-lg font-bold text-ivory mb-4">Kumaon Service Districts</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#locations" class="hover:text-champagne transition">Nainital District (Haldwani HQ)</a></li>
+            <li><a href="#locations" class="hover:text-champagne transition">Almora District</a></li>
+            <li><a href="#locations" class="hover:text-champagne transition">Bageshwar District</a></li>
+            <li><a href="#locations" class="hover:text-champagne transition">Champawat District</a></li>
+            <li><a href="#locations" class="hover:text-champagne transition">Pithoragarh District</a></li>
+            <li><a href="#locations" class="hover:text-champagne transition">Udham Singh Nagar District</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact & Admin -->
+        <div>
+          <h3 class="font-serif text-lg font-bold text-ivory mb-4">Studio &amp; Support</h3>
+          <ul class="space-y-2.5 text-xs">
+            <li>Lamachaur, Haldwani, Uttarakhand 263139</li>
+            <li><a href="tel:+919720666771" class="text-champagne font-semibold">+91 97206 66771</a></li>
+            <li><a href="mailto:rrappliances6@gmail.com" class="hover:text-champagne">rrappliances6@gmail.com</a></li>
+            <li><a href="https://maps.google.com/?q=Lamachaur,+Haldwani,+Uttarakhand" target="_blank" rel="noopener noreferrer" class="hover:text-champagne">Google Maps &amp; Reviews</a></li>
+            <li class="pt-2">
+              <button id="open-cms-btn" class="px-4 py-2 rounded-full border border-champagne/50 text-champagne hover:bg-champagne hover:text-charcoal font-semibold transition">
+                Studio Admin &amp; GA4 CMS
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
+        <p>&copy; <span id="copyright-year">2026</span> RR Appliances &amp; Modular Kitchen, Haldwani. All Rights Reserved.</p>
+        <div class="flex gap-6">
+          <button onclick="openLegalModal('privacy')" class="hover:text-champagne transition">Privacy Policy</button>
+          <button onclick="openLegalModal('terms')" class="hover:text-champagne transition">Terms &amp; Conditions</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING STACKED ACTION BUTTONS: CALL NOW + WHATSAPP -->
+  <div class="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
+    <a href="tel:+919720666771"
+       onclick="window.trackGBPConversion('floating_call_click', 'Floating Call Now')"
+       class="flex items-center gap-2 px-4 py-3 rounded-full bg-charcoal text-ivory border border-champagne/60 shadow-2xl hover:bg-champagne hover:text-charcoal transition text-xs sm:text-sm font-bold">
+      <svg class="w-4 h-4 text-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919720666771?text=Hello%20RR%20Appliances%20%26%20Modular%20Kitchen%2C%20I%20would%20like%20a%203D%20kitchen%20consultation." target="_blank" rel="noopener noreferrer"
+       onclick="window.trackGBPConversion('floating_whatsapp_click', 'Floating WhatsApp')"
+       class="flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-2xl transition text-xs sm:text-sm font-bold">
+      <span>WhatsApp Studio</span>
+    </a>
+  </div>
+
+  <!-- DETAIL MODAL (FOR KITCHENS, WARDROBES, VANITIES, PROJECTS, KUMAON DISTRICTS, LEGAL) -->
+  <div id="detail-modal" class="fixed inset-0 z-50 hidden bg-charcoal/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-warmwhite rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-sand shadow-2xl relative">
+      <button id="close-detail-modal" aria-label="Close Modal" class="sticky top-4 float-right mr-4 mt-4 w-10 h-10 rounded-full bg-charcoal text-ivory flex items-center justify-center font-bold z-10 hover:bg-champagne hover:text-charcoal transition">
+        &times;
+      </button>
+      <div id="detail-modal-body" class="p-6 sm:p-8 clear-both"></div>
+    </div>
+  </div>
+
+  <!-- STUDIO ADMIN & GA4 / GOOGLE BUSINESS PROFILE CMS MODAL -->
+  <div id="cms-modal" class="fixed inset-0 z-50 hidden bg-charcoal/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-warmwhite rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-sand shadow-2xl p-6 sm:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-sand mb-6">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-champagnedark font-bold">RR Studio Management</span>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal">Studio CMS, Leads &amp; Google Business Profile Analytics</h3>
+        </div>
+        <button id="close-cms-modal" class="w-10 h-10 rounded-full bg-charcoal text-ivory font-bold">&times;</button>
+      </div>
+
+      <!-- CMS Tabs -->
+      <div class="flex flex-wrap gap-2 mb-6 border-b border-sand pb-4">
+        <button data-tab="leads" class="cms-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-charcoal text-ivory">Customer Leads</button>
+        <button data-tab="gbp" class="cms-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-beige text-charcoal">GA4 &amp; Google Business Profile</button>
+        <button data-tab="offers" class="cms-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-beige text-charcoal">Edit Offers &amp; Strip</button>
+      </div>
+
+      <div id="cms-tab-content"></div>
+    </div>
+  </div>
+
+  <!-- COMPLETE APPLICATION LOGIC & DATA -->
+  <script>
+    // Global image error interceptor so every named item always displays a real architectural photograph
+    window.addEventListener('error', function (e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        const alt = (e.target.alt || '').toLowerCase();
+        if (alt.includes('wardrobe') || alt.includes('closet')) {
+          e.target.src = 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85';
+        } else if (alt.includes('vanity') || alt.includes('bathroom')) {
+          e.target.src = 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=85';
+        } else {
+          e.target.src = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85';
+        }
+      }
+    }, true);
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    // 1. DATA REPOSITORY (WITH AUTHENTIC PHOTOGRAPHS FOR EVERY ENTRY)
+    const KITCHEN_DESIGNS = [
+      {
+        id: 'l-shaped',
+        name: 'L-Shaped Kitchen',
+        category: 'compact',
+        tag: 'Most Popular in Haldwani',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85',
+        short: 'Golden-triangle workflow maximizing two adjacent walls with corner carousel storage.',
+        specs: 'Ideal for 80–140 sq.ft. apartments & independent homes • Soft-close Hettich Tandem drawers • Quartz countertop.'
+      },
+      {
+        id: 'u-shaped',
+        name: 'U-Shaped Kitchen',
+        category: 'spacious',
+        tag: 'Maximum Storage',
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85',
+        short: 'Three-wall continuous counter space built for heavy Indian cooking & multi-cook families.',
+        specs: '360° ergonomic reach • Tall pantry pull-outs • Built-in microwave & oven tower.'
+      },
+      {
+        id: 'parallel',
+        name: 'Parallel Kitchen',
+        category: 'compact',
+        tag: 'High Efficiency',
+        img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1000&q=85',
+        short: 'Dual opposing counters separating wet washing zones from dry preparation & hob zones.',
+        specs: 'Streamlined galley precision • Anti-fingerprint Acrylic or Matte PU fronts • Under-cabinet LED task lights.'
+      },
+      {
+        id: 'straight',
+        name: 'Straight Kitchen',
+        category: 'compact',
+        tag: 'Starting ₹65,000*',
+        img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=85',
+        short: 'Single-wall minimalist modular architecture ideal for studio suites & compact floors.',
+        specs: 'Clean linear aesthetics • Hydraulic lift-up wall shutters • BWP marine plywood carcass.'
+      },
+      {
+        id: 'island',
+        name: 'Island Kitchen',
+        category: 'luxury',
+        tag: 'Villa Flagship',
+        img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85',
+        short: 'Statement central breakfast & prep island designed for luxury villas in Kathgodam & Bhimtal.',
+        specs: 'Waterfall quartz island • Integrated induction/hob • Wine & glassware display cabinetry.'
+      },
+      {
+        id: 'open',
+        name: 'Open Kitchen',
+        category: 'spacious',
+        tag: 'Social Living',
+        img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85',
+        short: 'Seamlessly connects culinary space with dining & living rooms via a breakfast counter.',
+        specs: 'Whisper-quiet auto-clean chimney • Fluted glass tall units • Harmonized living room wood tones.'
+      },
+      {
+        id: 'modern',
+        name: 'Modern Kitchen',
+        category: 'luxury',
+        tag: 'Handleless G-Profile',
+        img: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=85',
+        short: 'Sleek handleless aluminium G-profile shutters paired with warm champagne & ivory tones.',
+        specs: 'Zero-protrusion edges • Servo-drive / soft-close German runners • Scratch-resistant surfaces.'
+      },
+      {
+        id: 'luxury',
+        name: 'Luxury Kitchen',
+        category: 'luxury',
+        tag: 'Bespoke Italian PU',
+        img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85',
+        short: 'Custom multi-coat Italian PU finish, fluted bronze glass, and automated corner pantries.',
+        specs: 'Bespoke architectural detailing • Häfele & Hettich flagship fittings • 10-year structural assurance.'
+      }
+    ];
+
+    const WARDROBE_DESIGNS = [
+      {
+        name: 'Sliding Door Modular Wardrobe',
+        img: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Space-saving floor-to-ceiling sliding shutters with anti-jump German rollers and soft-close dampers.'
+      },
+      {
+        name: 'Hinged Door Classic Wardrobe',
+        img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Full-access swing doors with bespoke brass/champagne handles, internal trouser pull-outs & locker drawers.'
+      },
+      {
+        name: 'Walk-In Luxury Closet',
+        img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Open boutique-style dressing room featuring sensor-activated warm LED shelves and island jewelry drawers.'
+      },
+      {
+        name: 'Fluted Glass & Aluminium Wardrobe',
+        img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Bronze-tinted fluted glass framed in slim anodized champagne aluminium profiles for an ultra-modern suite.'
+      },
+      {
+        name: 'Loft & Corner L-Shape Wardrobe',
+        img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Ceiling-height overhead loft storage engineered to utilize every vertical inch cleanly.'
+      },
+      {
+        name: 'Integrated Dressing & Study Wardrobe',
+        img: 'https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Seamless combination of modular closet shutters, backlit vanity mirror, and floating study desk.'
+      }
+    ];
+
+    const VANITY_DESIGNS = [
+      {
+        name: 'Floating Solid Surface Vanity',
+        img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Wall-hung moisture-resistant vanity with seamless Corian/solid-surface basin and concealed plumbing.'
+      },
+      {
+        name: 'Quartz Top Designer Vanity',
+        img: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Stain-proof Kalinga/Italian quartz countertop paired with fluted wood-finish waterproof drawers.'
+      },
+      {
+        name: '100% Waterproof BWP Marine Vanity',
+        img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Built using Action TESA HDHMR & BWP marine boards engineered specifically for high-humidity bathrooms.'
+      },
+      {
+        name: 'Backlit LED Mirror Vanity Unit',
+        img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Touch-sensor defogger LED mirror cabinet with hidden organizer shelves for daily toiletries.'
+      },
+      {
+        name: 'Double Sink Master Bath Vanity',
+        img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Wide dual-basin luxury vanity console crafted for master suites and boutique hill resorts.'
+      },
+      {
+        name: 'Compact Powder Room Vanity',
+        img: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Sleek space-saving corner and narrow-depth vanity consoles with soft-close storage.'
+      }
+    ];
+
+    const HOME_INTERIORS = [
+      {
+        title: 'Customized Wardrobes',
+        img: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=85',
+        desc: 'Sliding, hinged & walk-in wardrobes tailored with internal organizers and soft-close German hardware.'
+      },
+      {
+        title: 'Modern TV Units',
+        img: 'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=85',
+        desc: 'Floating entertainment consoles with marble-finish back panels, concealed wiring & warm cove lighting.'
+      },
+      {
+        title: 'Bedroom Interiors',
+        img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=85',
+        desc: 'Upholstered beds, backlit headboards, side tables & calm acoustic wall paneling.'
+      },
+      {
+        title: 'Modular Kitchen Cabinets',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85',
+        desc: 'Precision-cut carcasses, tandem cutlery drawers, bottle pull-outs & hydraulic lift-up cabinets.'
+      },
+      {
+        title: 'Dining & Living Room Interiors',
+        img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85',
+        desc: 'Bespoke crockery display units, wooden ceiling rafters, partitions & elegant dining spaces.'
+      },
+      {
+        title: 'Customized Storage Solutions',
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85',
+        desc: 'Foyer shoe cabinets, utility room storage, under-stair pull-outs & pooja mandir units.'
+      }
+    ];
+
+    const MATERIALS = [
+      {
+        id: 'laminate',
+        name: 'Laminate Finish',
+        badge: 'High Value & Scratch Resistant',
+        img: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=85',
+        desc: 'High-pressure decorative laminates available in matte, suede, stone, and natural woodgrain textures.',
+        benefits: ['Highly scratch & heat resistant', '150+ textures & woodgrains', 'Easy daily wipe maintenance', 'Ideal for budget-smart luxury kitchens']
+      },
+      {
+        id: 'acrylic',
+        name: 'Acrylic Finish',
+        badge: 'Mirror High-Gloss Luxury',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Non-toxic, UV-stable mirror-gloss acrylic sheets bonded seamlessly with laser edge-banding.',
+        benefits: ['Reflective glass-like depth', 'UV resistant — never yellows', 'Moisture & stain repellent', 'Makes compact kitchens feel brighter']
+      },
+      {
+        id: 'pu',
+        name: 'PU Finish',
+        badge: 'Bespoke Architectural Paint',
+        img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Multi-coat spray-applied polyurethane finish offering seamless curved edges in matte or high-gloss.',
+        benefits: ['Zero visible edge joints', 'Custom shade matching (RAL/NCS)', 'Silky satin or deep gloss sheen', 'Signature choice for luxury villas']
+      },
+      {
+        id: 'glass',
+        name: 'Glass Finish',
+        badge: 'Toughened Lacquered & Fluted',
+        img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85',
+        desc: '5mm toughened back-painted or fluted glass shutters encased in sleek anodized aluminium frames.',
+        benefits: ['100% waterproof & termite proof', 'Effortless oil & steam cleanup', 'Adds depth to upper wall cabinets', 'Paired with warm internal LED lighting']
+      },
+      {
+        id: 'aluminium',
+        name: 'Aluminium Finish',
+        badge: 'Zero-Termite Profile Systems',
+        img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Architectural-grade anodized aluminium profiles and G-handle channels for handleless operation.',
+        benefits: ['Completely rust & termite proof', 'Champagne, rose-gold & charcoal tones', 'Ultra-slim modern shutter frames', 'Lifetime structural stability']
+      },
+      {
+        id: 'ss',
+        name: 'Stainless Steel Finish',
+        badge: 'SS-304 Food-Grade Hygiene',
+        img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=85',
+        desc: '304-grade stainless steel baskets, cutlery organizers, and heavy-duty wet-zone sink cabinets.',
+        benefits: ['Hospital-grade hygiene', 'Impervious to water & pests', 'Heavy load bearing capacity', 'Built for decades of Indian cooking']
+      },
+      {
+        id: 'hdhmr',
+        name: 'HDHMR Boards',
+        badge: 'High Density High Moisture Resistance',
+        img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Action TESA high-density fibre boards engineered for superior screw-holding and smooth CNC routing.',
+        benefits: ['Superior screw holding strength', 'High moisture & borer resistance', 'Smooth surface for PU & Acrylic', 'Zero warping in Kumaon weather']
+      },
+      {
+        id: 'bwp',
+        name: 'BWP Waterproof Plywood',
+        badge: 'IS:710 Boiling Water Proof Core',
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85',
+        desc: 'Marine-grade CenturyPly & Greenply IS:710 BWP plywood for kitchen carcasses and sink units.',
+        benefits: ['100% Boiling Water Proof (IS:710)', 'Termite & borer proof treatment', 'High structural load strength', 'Ideal for wet kitchen & vanity zones']
+      }
+    ];
+
+    const PARTNERS = [
+      { name: 'Hettich', origin: 'German Furniture Fittings', img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Häfele', origin: 'Architectural Hardware & Appliances', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Godrej Interio', origin: 'Modular Kitchen & Locking Systems', img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Sleek', origin: 'Kitchen Baskets & Chimney Systems', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Action TESA', origin: 'HDHMR & Engineered Boards', img: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Greenply', origin: 'BWP Marine & Zero-Emission Ply', img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80' },
+      { name: 'CenturyPly', origin: 'Firewall & Sainik BWP Plywood', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Trend', origin: 'Designer Kitchen Accessories', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Virgo', origin: 'Luxury Laminates & Acrylic Sheets', img: 'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=600&q=80' }
+    ];
+
+    const PROCESS_STEPS = [
+      { step: '01', title: 'Free Consultation', img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=700&q=80', desc: 'Discuss layout, appliances & budget at our Lamachaur Haldwani studio or via video call.' },
+      { step: '02', title: 'Site Measurement', img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80', desc: 'Laser-accurate site measurement of plumbing, electrical & civil points across Kumaon.' },
+      { step: '03', title: '3D Kitchen Designing', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80', desc: 'Photorealistic 3D renders and ergonomic elevation drawings before production begins.' },
+      { step: '04', title: 'Material Selection', img: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=700&q=80', desc: 'Touch and finalize BWP boards, Acrylic/PU finishes, quartz countertops & German fittings.' },
+      { step: '05', title: 'Manufacturing & Installation', img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=700&q=80', desc: 'Factory-finished modules installed cleanly by our trained technicians.' },
+      { step: '06', title: 'Final Handover', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80', desc: 'Multi-point alignment & hardware inspection with warranty documentation.' }
+    ];
+
+    const COMPLETED_PROJECTS = [
+      {
+        title: 'Ivory & Champagne Acrylic L-Kitchen',
+        location: 'Kathgodam, Haldwani (Nainital District)',
+        category: 'Modular Kitchens',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85',
+          'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: 'Completed L-shaped modular kitchen with Hettich InnoTech drawers, Kalinga quartz countertop, and built-in auto-clean chimney.'
+      },
+      {
+        title: 'Floor-to-Ceiling Sliding Wardrobe Suite',
+        location: 'Bhimtal Lakeview Residence (Nainital District)',
+        category: 'Wardrobes',
+        img: 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85',
+          'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: '3-door sliding wardrobe in warm beige suede laminate with bronze aluminium profiles and internal sensor lighting.'
+      },
+      {
+        title: 'Fluted Marble & Wood Floating TV Unit',
+        location: 'Mukhan Road, Haldwani',
+        category: 'TV Units',
+        img: 'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: 'Wall-mounted architectural TV console with concealed cable management, warm cove LED lighting & soft-close drawers.'
+      },
+      {
+        title: 'Complete 3BHK Villa Interior & Island Kitchen',
+        location: 'Rudrapur (Udham Singh Nagar District)',
+        category: 'Complete Home Interiors',
+        img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85',
+          'https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: 'Turnkey island kitchen, 3 master wardrobes, 2 floating bathroom vanities, and dining cabinetry.'
+      },
+      {
+        title: 'Parallel Matte PU Mountain Home Kitchen',
+        location: 'Almora & Ranikhet',
+        category: 'Modular Kitchens',
+        img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: 'Weather-engineered Action TESA HDHMR & BWP marine kitchen built for high-altitude Kumaon homes.'
+      },
+      {
+        title: 'Walk-In Closet & Master Bath Vanity',
+        location: 'Kaladhungi Road, Haldwani',
+        category: 'Wardrobes',
+        img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1000&q=85',
+        gallery: [
+          'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1000&q=85',
+          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=85'
+        ],
+        summary: 'Custom L-shaped walk-in dressing space paired with a quartz-topped floating master vanity.'
+      }
+    ];
+
+    const KUMAON_DISTRICTS = [
+      {
+        num: 'District 01',
+        name: 'Nainital District (Haldwani HQ)',
+        badge: 'Primary Showroom & Service Hub',
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80',
+        towns: ['Haldwani', 'Kathgodam', 'Nainital', 'Bhimtal', 'Ramnagar', 'Kaladhungi', 'Lalkuan'],
+        desc: 'Headquartered at Lamachaur, Haldwani — offering same-day site visits, 3D design consultations, and turnkey modular installations across Nainital district.'
+      },
+      {
+        num: 'District 02',
+        name: 'Almora District',
+        badge: 'Heritage & Hill Homes',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80',
+        towns: ['Almora Town', 'Ranikhet', 'Dwarahat', 'Someshwar', 'Jageshwar', 'Chaukhutia'],
+        desc: 'Moisture-shielded HDHMR & BWP marine modular kitchens, wardrobes, and warm wood interiors tailored for residences and homestays in Almora & Ranikhet.'
+      },
+      {
+        num: 'District 03',
+        name: 'Bageshwar District',
+        badge: 'Full Kumaon Delivery & Install',
+        img: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=900&q=80',
+        towns: ['Bageshwar Town', 'Garur', 'Kapkot', 'Kanda'],
+        desc: 'End-to-end laser measurement, safe hill-transit packaging, and factory-trained installation teams serving Bageshwar homeowners.'
+      },
+      {
+        num: 'District 04',
+        name: 'Champawat District',
+        badge: 'Hills & Foothills Coverage',
+        img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80',
+        towns: ['Champawat Town', 'Tanakpur', 'Lohaghat', 'Banbasa'],
+        desc: 'Dedicated modular kitchen, chimney-hob appliance, and wardrobe installations from Tanakpur foothills to Lohaghat & Champawat.'
+      },
+      {
+        num: 'District 05',
+        name: 'Pithoragarh District',
+        badge: 'Borderland & Valley Homes',
+        img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80',
+        towns: ['Pithoragarh Town', 'Didihat', 'Berinag', 'Gangolihat', 'Dharchula'],
+        desc: 'Precision-engineered modular kitchens, stainless steel wet-zone units, and custom wardrobes delivered and installed across Pithoragarh.'
+      },
+      {
+        num: 'District 06',
+        name: 'Udham Singh Nagar District',
+        badge: 'Terai Villas & Apartments',
+        img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80',
+        towns: ['Rudrapur', 'Kashipur', 'Khatima', 'Sitarganj', 'Bazpur', 'Jaspur'],
+        desc: 'Rapid turnkey execution for independent villas, duplexes, and apartments across Rudrapur, Kashipur, Khatima & Sitarganj.'
+      }
+    ];
+
+    const DEFAULT_OFFERS = [
+      {
+        tag: 'Entry Luxury Package',
+        title: 'Your Dream Modular Kitchen Starting at ₹65,000*',
+        desc: 'Includes BWP marine/HDHMR cabinets, soft-close channels, SS-304 cutlery basket & designer laminate shutters.',
+        terms: '*Applicable on standard Straight/compact layout dimensions. Hardware & countertop upgrades optional.'
+      },
+      {
+        tag: 'Festive Studio Privilege',
+        title: 'Get Up to ₹5,000 Savings on Selected Modular Kitchen Offers',
+        desc: 'Direct studio privilege on complete modular kitchen + chimney & built-in hob orders booked this month.',
+        terms: '*Applicable on complete kitchen orders above ₹1.25 Lakh. Cannot be combined with other vouchers.'
+      },
+      {
+        tag: 'Complimentary Architectural Service',
+        title: 'Free 3D Kitchen Design & Site Consultation',
+        desc: 'Receive a custom 3D floor-plan render, ergonomic elevation & itemized material estimate before booking.',
+        terms: '*Complimentary across Haldwani, Kathgodam, Bhimtal, Rudrapur & Kumaon towns.'
+      }
+    ];
+
+    const REVIEWS = [
+      {
+        name: 'Dr. Manoj Pant',
+        location: 'Haldwani, Nainital',
+        date: '2 weeks ago',
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+        text: 'RR Appliances & Modular Kitchen transformed our kitchen and master wardrobe in Haldwani. Their 3D design accuracy, Hettich fittings, and polite installation team exceeded our expectations.'
+      },
+      {
+        name: 'Priya Bisht',
+        location: 'Bhimtal, Uttarakhand',
+        date: '1 month ago',
+        avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
+        text: 'We got our acrylic modular kitchen, floating bathroom vanities, and TV unit designed by their Lamachaur studio. Transparent pricing and genuinely waterproof materials.'
+      },
+      {
+        name: 'Vikram Singh Negi',
+        location: 'Almora, Kumaon',
+        date: '2 months ago',
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+        text: 'Even in Almora, their team visited on schedule for laser measurement and completed our modular kitchen handover seamlessly. Highly recommended across Kumaon!'
+      }
+    ];
+
+    // 2. STATE & CMS STORAGE
+    let appState = {
+      announcement: localStorage.getItem('rr_announcement') || 'Transform Your Kitchen with RR Appliances  |  Get Your Dream Kitchen Starting at ₹65,000*  |  Free 3D Kitchen Design Consultation Across Haldwani & All 6 Districts of Kumaon',
+      offers: JSON.parse(localStorage.getItem('rr_offers') || 'null') || DEFAULT_OFFERS,
+      leads: JSON.parse(localStorage.getItem('rr_leads') || '[]'),
+      selectedMaterialId: 'acrylic'
+    };
+
+    function saveState() {
+      localStorage.setItem('rr_announcement', appState.announcement);
+      localStorage.setItem('rr_offers', JSON.stringify(appState.offers));
+      localStorage.setItem('rr_leads', JSON.stringify(appState.leads));
+    }
+
+    // 3. RENDER FUNCTIONS
+    function renderAnnouncement() {
+      const el = document.getElementById('announcement-marquee');
+      const text = escapeHtml(appState.announcement);
+      el.innerHTML = `
+        <span class="font-medium tracking-wide">${text}</span>
+        <span class="text-champagne">✦</span>
+        <span class="font-medium tracking-wide">${text}</span>
+        <span class="text-champagne">✦</span>
+      `;
+    }
+
+    function renderKitchenDesigns(filter = 'all') {
+      const grid = document.getElementById('kitchen-designs-grid');
+      const items = filter === 'all' ? KITCHEN_DESIGNS : KITCHEN_DESIGNS.filter(k => k.category === filter);
+      grid.innerHTML = items.map(k => `
+        <article class="group bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between transition duration-300 hover:-translate-y-1">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-beige">
+              <img src="${k.img}" alt="${escapeHtml(k.name)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-charcoal/85 text-champagne text-[11px] font-semibold backdrop-blur-sm">
+                ${escapeHtml(k.tag)}
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(k.name)}</h3>
+              <p class="text-xs sm:text-sm text-charcoalsoft leading-relaxed">${escapeHtml(k.short)}</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 flex items-center justify-between gap-2">
+            <button onclick="openKitchenModal('${k.id}')"
+                    class="w-full py-2.5 px-4 rounded-full border border-charcoal text-charcoal group-hover:bg-charcoal group-hover:text-ivory text-xs font-semibold transition">
+              Explore Design
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderWardrobes() {
+      const grid = document.getElementById('wardrobes-grid');
+      grid.innerHTML = WARDROBE_DESIGNS.map(w => `
+        <article class="group bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between transition hover:-translate-y-1">
+          <div>
+            <div class="h-64 overflow-hidden bg-beige">
+              <img src="${w.img}" alt="${escapeHtml(w.name)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(w.name)}</h3>
+              <p class="text-sm text-charcoalsoft leading-relaxed">${escapeHtml(w.desc)}</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <button onclick="prefillConsultation('Modular Wardrobe', '${escapeHtml(w.name)}')"
+                    class="w-full py-2.5 rounded-full bg-beige hover:bg-champagne text-charcoal text-xs font-semibold transition">
+              Get Wardrobe Quote
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderVanities() {
+      const grid = document.getElementById('vanities-grid');
+      grid.innerHTML = VANITY_DESIGNS.map(v => `
+        <article class="group bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between transition hover:-translate-y-1">
+          <div>
+            <div class="h-64 overflow-hidden bg-beige">
+              <img src="${v.img}" alt="${escapeHtml(v.name)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(v.name)}</h3>
+              <p class="text-sm text-charcoalsoft leading-relaxed">${escapeHtml(v.desc)}</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <button onclick="prefillConsultation('Designer Bathroom Vanity', '${escapeHtml(v.name)}')"
+                    class="w-full py-2.5 rounded-full bg-beige hover:bg-champagne text-charcoal text-xs font-semibold transition">
+              Request Vanity Design
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderHomeInteriors() {
+      const grid = document.getElementById('home-interiors-grid');
+      grid.innerHTML = HOME_INTERIORS.map(item => `
+        <article class="group bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between">
+          <div>
+            <div class="h-56 overflow-hidden bg-beige">
+              <img src="${item.img}" alt="${escapeHtml(item.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(item.title)}</h3>
+              <p class="text-sm text-charcoalsoft leading-relaxed">${escapeHtml(item.desc)}</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="#consultation" onclick="prefillConsultation('Complete Home Interiors', '${escapeHtml(item.title)}')"
+               class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-champagnedark hover:text-charcoal transition">
+              <span>Book Free Interior Consultation</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderMaterials() {
+      const selector = document.getElementById('materials-selector');
+      selector.innerHTML = MATERIALS.map(m => {
+        const active = m.id === appState.selectedMaterialId;
+        return `
+          <button onclick="selectMaterial('${m.id}')"
+                  class="flex items-center gap-3 p-3 rounded-2xl border text-left transition ${active ? 'bg-charcoal text-ivory border-charcoal shadow-md' : 'bg-warmwhite text-charcoal border-sand hover:border-champagne'}">
+            <img src="${m.img}" alt="${escapeHtml(m.name)}" class="w-12 h-12 rounded-xl object-cover shrink-0" />
+            <span class="text-xs sm:text-sm font-semibold leading-snug">${escapeHtml(m.name)}</span>
+          </button>
+        `;
+      }).join('');
+
+      const activeMat = MATERIALS.find(m => m.id === appState.selectedMaterialId) || MATERIALS[0];
+      const panel = document.getElementById('material-detail-panel');
+      panel.innerHTML = `
+        <div>
+          <div class="relative h-60 sm:h-72 rounded-2xl overflow-hidden mb-6 bg-beige">
+            <img src="${activeMat.img}" alt="${escapeHtml(activeMat.name)}" class="w-full h-full object-cover" />
+            <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-charcoal/85 text-champagne text-xs font-semibold">
+              ${escapeHtml(activeMat.badge)}
+            </span>
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-charcoal mb-2">${escapeHtml(activeMat.name)}</h3>
+          <p class="text-sm text-charcoalsoft leading-relaxed mb-5">${escapeHtml(activeMat.desc)}</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
+            ${activeMat.benefits.map(b => `
+              <div class="flex items-center gap-2 text-xs font-medium text-charcoal bg-ivory px-3.5 py-2.5 rounded-xl border border-sand">
+                <span class="text-champagnedark font-bold">✓</span>
+                <span>${escapeHtml(b)}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3 pt-4 border-t border-sand">
+          <button onclick="prefillConsultation('Modular Kitchen', 'Finish: ${escapeHtml(activeMat.name)}')"
+                  class="px-6 py-3 rounded-full gold-gradient text-charcoal text-xs sm:text-sm font-bold shadow">
+            Request ${escapeHtml(activeMat.name)} Sample &amp; Quote
+          </button>
+        </div>
+      `;
+    }
+
+    function selectMaterial(id) {
+      appState.selectedMaterialId = id;
+      renderMaterials();
+    }
+
+    function renderPartners() {
+      const grid = document.getElementById('partners-grid');
+      grid.innerHTML = PARTNERS.map(p => `
+        <div class="flex items-center gap-4 p-4 rounded-2xl bg-ivory/5 border border-ivory/15 hover:border-champagne/60 transition">
+          <img src="${p.img}" alt="${escapeHtml(p.name)} Partner Showcase" class="w-16 h-16 rounded-xl object-cover shrink-0 border border-ivory/10" />
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-champagne">${escapeHtml(p.name)}</h3>
+            <p class="text-xs text-ivory/75">${escapeHtml(p.origin)}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderProcess() {
+      const grid = document.getElementById('process-grid');
+      grid.innerHTML = PROCESS_STEPS.map(s => `
+        <div class="bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col">
+          <div class="relative h-44 overflow-hidden bg-beige">
+            <img src="${s.img}" alt="${escapeHtml(s.title)}" class="w-full h-full object-cover" />
+            <span class="absolute top-3.5 left-3.5 w-10 h-10 rounded-full gold-gradient text-charcoal font-serif font-bold text-base flex items-center justify-center shadow">
+              ${s.step}
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(s.title)}</h3>
+            <p class="text-sm text-charcoalsoft leading-relaxed">${escapeHtml(s.desc)}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderOffers() {
+      const grid = document.getElementById('offers-grid');
+      grid.innerHTML = appState.offers.map((o, idx) => `
+        <div class="bg-warmwhite rounded-3xl border border-champagne/40 p-7 luxury-shadow flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3.5 py-1 rounded-full bg-champagne/20 text-champagnedark text-xs font-bold uppercase tracking-wider mb-4">
+              ${escapeHtml(o.tag)}
+            </span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal mb-3 leading-snug">
+              ${escapeHtml(o.title)}
+            </h3>
+            <p class="text-sm text-charcoalsoft leading-relaxed mb-4">
+              ${escapeHtml(o.desc)}
+            </p>
+          </div>
+          <div class="space-y-4 pt-4 border-t border-sand">
+            <p class="text-[11px] text-charcoalsoft/80 italic">${escapeHtml(o.terms)}</p>
+            <button onclick="claimOffer(${idx})"
+                    class="w-full py-3 rounded-full gold-gradient text-charcoal font-bold text-xs sm:text-sm shadow hover:brightness-105 transition">
+              Claim This Offer
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderProjects(cat = 'All') {
+      const grid = document.getElementById('projects-grid');
+      const items = cat === 'All' ? COMPLETED_PROJECTS : COMPLETED_PROJECTS.filter(p => p.category === cat);
+      grid.innerHTML = items.map((p, i) => `
+        <article class="group bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-beige">
+              <img src="${p.img}" alt="${escapeHtml(p.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-charcoal/85 text-ivory text-[11px] font-semibold">
+                ${escapeHtml(p.category)}
+              </span>
+            </div>
+            <div class="p-6">
+              <p class="text-xs font-semibold text-champagnedark mb-1">${escapeHtml(p.location)}</p>
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(p.title)}</h3>
+              <p class="text-xs sm:text-sm text-charcoalsoft leading-relaxed">${escapeHtml(p.summary)}</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <button onclick="openProjectModal(${COMPLETED_PROJECTS.indexOf(p)})"
+                    class="w-full py-2.5 rounded-full border border-charcoal text-charcoal hover:bg-charcoal hover:text-ivory text-xs font-semibold transition">
+              View Project Gallery
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderLocations() {
+      const grid = document.getElementById('locations-grid');
+      grid.innerHTML = KUMAON_DISTRICTS.map((d, idx) => `
+        <article class="bg-warmwhite rounded-3xl border border-sand overflow-hidden luxury-shadow flex flex-col justify-between">
+          <div>
+            <div class="relative h-52 overflow-hidden bg-beige">
+              <img src="${d.img}" alt="${escapeHtml(d.name)} Modular Kitchen & Interiors" class="w-full h-full object-cover" />
+              <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                <span class="px-3 py-1 rounded-full bg-charcoal text-champagne text-xs font-bold">${escapeHtml(d.num)}</span>
+                <span class="px-3 py-1 rounded-full bg-warmwhite/95 text-charcoal text-[11px] font-semibold">${escapeHtml(d.badge)}</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">${escapeHtml(d.name)}</h3>
+              <p class="text-xs sm:text-sm text-charcoalsoft leading-relaxed mb-4">${escapeHtml(d.desc)}</p>
+              <div class="flex flex-wrap gap-1.5">
+                ${d.towns.map(t => `<span class="px-2.5 py-1 rounded-full bg-beige text-charcoal text-[11px] font-medium">${escapeHtml(t)}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 flex gap-2.5">
+            <button onclick="openDistrictModal(${idx})"
+                    class="flex-1 py-2.5 rounded-full border border-charcoal text-charcoal hover:bg-charcoal hover:text-ivory text-xs font-semibold transition">
+              Area Details
+            </button>
+            <button onclick="bookDistrictVisit('${escapeHtml(d.name)}')"
+                    class="flex-1 py-2.5 rounded-full gold-gradient text-charcoal text-xs font-bold shadow">
+              Book Site Visit
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderReviews() {
+      const grid = document.getElementById('reviews-grid');
+      grid.innerHTML = REVIEWS.map(r => `
+        <article class="bg-warmwhite rounded-3xl border border-sand p-7 luxury-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-amber-500 text-base tracking-wider">★★★★★</span>
+              <span class="text-xs text-charcoalsoft">${escapeHtml(r.date)}</span>
+            </div>
+            <p class="text-sm text-charcoalsoft leading-relaxed italic mb-6">“${escapeHtml(r.text)}”</p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-sand">
+            <img src="${r.avatar}" alt="${escapeHtml(r.name)}" class="w-11 h-11 rounded-full object-cover border border-champagne/40" />
+            <div>
+              <h4 class="text-sm font-bold text-charcoal">${escapeHtml(r.name)}</h4>
+              <p class="text-xs text-champagnedark font-medium">${escapeHtml(r.location)}</p>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // 4. INTERACTIVE MODALS & PREFILL HELPERS
+    function openModal(html) {
+      document.getElementById('detail-modal-body').innerHTML = html;
+      document.getElementById('detail-modal').classList.remove('hidden');
+    }
+
+    function openKitchenModal(id) {
+      const k = KITCHEN_DESIGNS.find(item => item.id === id);
+      if (!k) return;
+      openModal(`
+        <img src="${k.img}" alt="${escapeHtml(k.name)}" class="w-full h-72 object-cover rounded-2xl mb-6" />
+        <span class="px-3 py-1 rounded-full bg-champagne/20 text-champagnedark text-xs font-bold">${escapeHtml(k.tag)}</span>
+        <h3 class="font-serif text-3xl font-bold text-charcoal mt-3 mb-2">${escapeHtml(k.name)}</h3>
+        <p class="text-sm text-charcoalsoft leading-relaxed mb-4">${escapeHtml(k.short)}</p>
+        <div class="p-4 rounded-2xl bg-ivory border border-sand text-xs sm:text-sm text-charcoal mb-6">
+          <strong>Architectural Specifications:</strong> ${escapeHtml(k.specs)}
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <button onclick="document.getElementById('detail-modal').classList.add('hidden'); prefillConsultation('Modular Kitchen', '${escapeHtml(k.name)}')"
+                  class="px-6 py-3 rounded-full gold-gradient text-charcoal text-sm font-bold">
+            Get 3D Design &amp; Quote for ${escapeHtml(k.name)}
+          </button>
+          <a href="tel:+919720666771" class="px-6 py-3 rounded-full border border-charcoal text-charcoal text-sm font-semibold">
+            Call Now: +91 97206 66771
+          </a>
+        </div>
+      `);
+    }
+
+    function openProjectModal(idx) {
+      const p = COMPLETED_PROJECTS[idx];
+      if (!p) return;
+      openModal(`
+        <span class="text-xs uppercase tracking-widest text-champagnedark font-bold">${escapeHtml(p.location)}</span>
+        <h3 class="font-serif text-3xl font-bold text-charcoal mt-1 mb-4">${escapeHtml(p.title)}</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          ${p.gallery.map(img => `<img src="${img}" alt="${escapeHtml(p.title)}" class="w-full h-60 object-cover rounded-2xl" />`).join('')}
+        </div>
+        <p class="text-sm text-charcoalsoft leading-relaxed mb-6">${escapeHtml(p.summary)}</p>
+        <button onclick="document.getElementById('detail-modal').classList.add('hidden'); prefillConsultation('${escapeHtml(p.category)}', 'Similar to: ${escapeHtml(p.title)}')"
+                class="px-6 py-3 rounded-full gold-gradient text-charcoal text-sm font-bold">
+          Request Similar Design Estimate
+        </button>
+      `);
+    }
+
+    function openDistrictModal(idx) {
+      const d = KUMAON_DISTRICTS[idx];
+      if (!d) return;
+      openModal(`
+        <img src="${d.img}" alt="${escapeHtml(d.name)}" class="w-full h-64 object-cover rounded-2xl mb-5" />
+        <span class="text-xs uppercase tracking-widest text-champagnedark font-bold">${escapeHtml(d.num)} • Kumaon Division</span>
+        <h3 class="font-serif text-3xl font-bold text-charcoal mt-1 mb-3">Modular Kitchens &amp; Interiors in ${escapeHtml(d.name)}</h3>
+        <p class="text-sm text-charcoalsoft leading-relaxed mb-4">${escapeHtml(d.desc)}</p>
+        <p class="text-xs font-bold uppercase tracking-wider text-charcoal mb-2">Covered Towns &amp; Service Areas:</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          ${d.towns.map(t => `<span class="px-3 py-1 rounded-full bg-beige text-charcoal text-xs font-semibold">${escapeHtml(t)}</span>`).join('')}
+        </div>
+        <button onclick="document.getElementById('detail-modal').classList.add('hidden'); bookDistrictVisit('${escapeHtml(d.name)}')"
+                class="px-6 py-3 rounded-full gold-gradient text-charcoal text-sm font-bold">
+          Schedule Site Measurement in ${escapeHtml(d.name)}
+        </button>
+      `);
+    }
+
+    function prefillConsultation(service, note) {
+      const serviceSelect = document.getElementById('lead-service');
+      const notesInput = document.getElementById('lead-notes');
+      if (serviceSelect) {
+        for (let opt of serviceSelect.options) {
+          if (opt.value.toLowerCase().includes(service.toLowerCase())) {
+            serviceSelect.value = opt.value;
+            break;
+          }
+        }
+      }
+      if (notesInput && note) {
+        notesInput.value = 'Interested in: ' + note;
+      }
+      document.getElementById('consultation').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function bookDistrictVisit(districtName) {
+      document.getElementById('lead-city').value = districtName;
+      document.getElementById('lead-notes').value = 'Requesting site measurement & 3D consultation in ' + districtName;
+      window.trackGBPConversion('kumaon_district_visit', districtName, { district: districtName });
+      document.getElementById('consultation').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function claimOffer(idx) {
+      const offer = appState.offers[idx];
+      if (!offer) return;
+      document.getElementById('lead-notes').value = 'Claiming Offer: ' + offer.title;
+      window.trackGBPConversion('offer_claimed', offer.title);
+      document.getElementById('consultation').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openLegalModal(type) {
+      if (type === 'privacy') {
+        openModal(`
+          <h3 class="font-serif text-3xl font-bold text-charcoal mb-3">Privacy Policy</h3>
+          <p class="text-sm text-charcoalsoft leading-relaxed">
+            RR Appliances &amp; Modular Kitchen (Lamachaur, Haldwani, Uttarakhand) respects your privacy. Contact details and floor-plan images shared through our consultation form are used exclusively to prepare your 3D interior design and quotation and are never sold to third parties.
+          </p>
+        `);
+      } else {
+        openModal(`
+          <h3 class="font-serif text-3xl font-bold text-charcoal mb-3">Terms &amp; Conditions</h3>
+          <p class="text-sm text-charcoalsoft leading-relaxed">
+            Promotional starting prices (such as ₹65,000*) apply to standard straight/compact modular kitchen dimensions using selected laminate finishes and hardware tiers. Final quotations are finalized after laser site measurement and 3D design approval.
+          </p>
+        `);
+      }
+    }
+
+    // 5. STUDIO CMS & GOOGLE BUSINESS PROFILE ANALYTICS PANEL
+    function renderCMSTab(tab = 'leads') {
+      document.querySelectorAll('.cms-tab-btn').forEach(btn => {
+        const active = btn.dataset.tab === tab;
+        btn.className = `cms-tab-btn px-4 py-2 rounded-full text-xs font-bold ${active ? 'bg-charcoal text-ivory' : 'bg-beige text-charcoal'}`;
+      });
+
+      const container = document.getElementById('cms-tab-content');
+      if (tab === 'leads') {
+        container.innerHTML = appState.leads.length === 0
+          ? `<p class="text-sm text-charcoalsoft py-8 text-center">No enquiries submitted yet. Submit the Free Consultation form to see live leads here.</p>`
+          : `<div class="space-y-3">
+              ${appState.leads.map(l => `
+                <div class="p-4 rounded-2xl bg-ivory border border-sand flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div>
+                    <p class="font-bold text-sm text-charcoal">${escapeHtml(l.name)} • <span class="text-champagnedark">${escapeHtml(l.phone)}</span></p>
+                    <p class="text-xs text-charcoalsoft">${escapeHtml(l.city)} | ${escapeHtml(l.service)} (${escapeHtml(l.kitchenType)}) | Budget: ${escapeHtml(l.budget)}</p>
+                    <p class="text-xs text-charcoal mt-1">${escapeHtml(l.notes || '')}</p>
+                  </div>
+                  <span class="text-[11px] text-charcoalsoft shrink-0">${escapeHtml(l.date)}</span>
+                </div>
+              `).join('')}
+            </div>`;
+      } else if (tab === 'gbp') {
+        const events = JSON.parse(localStorage.getItem('rr_gbp_events') || '[]');
+        const currentId = localStorage.getItem('rr_ga4_measurement_id') || 'G-J1C85VEXCE';
+        container.innerHTML = `
+          <div class="space-y-6">
+            <div class="p-5 rounded-2xl bg-ivory border border-sand space-y-3">
+              <h4 class="font-serif text-xl font-bold text-charcoal">Google Analytics 4 (GA4) &amp; Google Business Profile Attribution</h4>
+              <p class="text-xs text-charcoalsoft">Track calls, WhatsApp chats, directions &amp; consultation leads coming from your Google Business Profile listing in Haldwani.</p>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <input type="text" id="cms-ga4-id" value="${escapeHtml(currentId)}" class="px-4 py-2.5 rounded-xl bg-warmwhite border border-sand text-sm font-mono" />
+                <button onclick="saveGA4Id()" class="px-5 py-2.5 rounded-xl gold-gradient text-charcoal text-xs font-bold">Save GA4 Measurement ID</button>
+              </div>
+              <div class="pt-2 text-xs text-charcoalsoft">
+                <strong>Recommended GBP Website URL with UTM:</strong><br/>
+                <code class="block mt-1 p-2 rounded-lg bg-warmwhite border border-sand text-[11px] break-all">https://rrapplianceshaldwani.in/?utm_source=google&amp;utm_medium=gbp&amp;utm_campaign=haldwani_showroom</code>
+              </div>
+            </div>
+            <div>
+              <h4 class="font-bold text-xs uppercase tracking-wider text-charcoal mb-3">Recent Tracked GBP &amp; Conversion Events (${events.length})</h4>
+              ${events.length === 0
+                ? `<p class="text-xs text-charcoalsoft">Click Call Now, WhatsApp, or Submit Consultation to test live conversion logging.</p>`
+                : `<div class="space-y-2 max-h-56 overflow-y-auto">
+                    ${events.map(ev => `
+                      <div class="p-3 rounded-xl bg-ivory border border-sand flex justify-between text-xs">
+                        <span><strong>${escapeHtml(ev.action)}</strong> — ${escapeHtml(ev.label)} (${escapeHtml(ev.source)})</span>
+                        <span class="text-charcoalsoft">${escapeHtml(ev.time)}</span>
+                      </div>
+                    `).join('')}
+                  </div>`}
+            </div>
+          </div>
+        `;
+      } else if (tab === 'offers') {
+        container.innerHTML = `
+          <div class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-charcoal mb-1">Top Moving Announcement Text</label>
+              <input type="text" id="cms-announcement-input" value="${escapeHtml(appState.announcement)}" class="w-full px-4 py-3 rounded-xl bg-ivory border border-sand text-sm" />
+            </div>
+            <button onclick="saveCMSOffers()" class="px-6 py-3 rounded-full gold-gradient text-charcoal text-xs font-bold">
+              Update Announcement Strip
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    function saveGA4Id() {
+      const val = document.getElementById('cms-ga4-id').value.trim();
+      if (val) {
+        localStorage.setItem('rr_ga4_measurement_id', val);
+        window.RR_GA4_ID = val;
+        renderCMSTab('gbp');
+      }
+    }
+
+    function saveCMSOffers() {
+      const val = document.getElementById('cms-announcement-input').value.trim();
+      if (val) {
+        appState.announcement = val;
+        saveState();
+        renderAnnouncement();
+      }
+    }
+
+    // 6. INITIALIZATION & EVENT LISTENERS
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+      renderAnnouncement();
+      renderKitchenDesigns('all');
+      renderWardrobes();
+      renderVanities();
+      renderHomeInteriors();
+      renderMaterials();
+      renderPartners();
+      renderProcess();
+      renderOffers();
+      renderProjects('All');
+      renderLocations();
+      renderReviews();
+
+      // Mobile drawer toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+
+      // Kitchen category filter
+      document.querySelectorAll('.kitchen-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.kitchen-filter-btn').forEach(b => {
+            b.className = 'kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-beige text-charcoal hover:bg-sand transition shrink-0';
+          });
+          btn.className = 'kitchen-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-charcoal text-ivory transition shrink-0';
+          renderKitchenDesigns(btn.dataset.filter);
+        });
+      });
+
+      // Project category filter
+      document.querySelectorAll('.project-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.project-filter-btn').forEach(b => {
+            b.className = 'project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-beige text-charcoal hover:bg-sand transition';
+          });
+          btn.className = 'project-filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-charcoal text-ivory transition';
+          renderProjects(btn.dataset.cat);
+        });
+      });
+
+      // Photo file upload feedback
+      document.getElementById('lead-photo').addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        const box = document.getElementById('photo-preview-box');
+        if (file) {
+          document.getElementById('photo-file-name').textContent = 'Attached: ' + file.name;
+          box.classList.remove('hidden');
+        } else {
+          box.classList.add('hidden');
+        }
+      });
+
+      // Consultation Form Submission
+      document.getElementById('consultation-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const lead = {
+          name: document.getElementById('lead-name').value.trim(),
+          phone: document.getElementById('lead-phone').value.trim(),
+          city: document.getElementById('lead-city').value.trim(),
+          service: document.getElementById('lead-service').value,
+          kitchenType: document.getElementById('lead-kitchen-type').value,
+          budget: document.getElementById('lead-budget').value,
+          notes: document.getElementById('lead-notes').value.trim(),
+          date: new Date().toLocaleString('en-IN')
+        };
+
+        appState.leads.unshift(lead);
+        saveState();
+
+        window.trackGBPConversion('generate_lead', lead.service, { district: lead.city, value: 1 });
+
+        const waText = encodeURIComponent(
+          `Hello RR Appliances & Modular Kitchen,\n` +
+          `Name: ${lead.name}\n` +
+          `Mobile: ${lead.phone}\n` +
+          `Location: ${lead.city}\n` +
+          `Service: ${lead.service} (${lead.kitchenType})\n` +
+          `Budget: ${lead.budget}\n` +
+          `Details: ${lead.notes || 'Free 3D Consultation'}`
+        );
+
+        document.getElementById('whatsapp-direct-link').href = `https://wa.me/919720666771?text=${waText}`;
+        document.getElementById('gmail-direct-link').href = `mailto:rrappliances6@gmail.com?subject=${encodeURIComponent('New 3D Design Enquiry - ' + lead.name)}&body=${waText}`;
+        document.getElementById('form-success-summary').textContent =
+          `Thank you ${lead.name}! Our senior designer in Haldwani has logged your ${lead.service} request for ${lead.city}.`;
+        document.getElementById('form-success-box').classList.remove('hidden');
+        document.getElementById('form-success-box').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      // Modals & CMS Controls
+      document.getElementById('close-detail-modal').addEventListener('click', () => {
+        document.getElementById('detail-modal').classList.add('hidden');
+      });
+      document.getElementById('open-cms-btn').addEventListener('click', () => {
+        document.getElementById('cms-modal').classList.remove('hidden');
+        renderCMSTab('leads');
+      });
+      document.getElementById('close-cms-modal').addEventListener('click', () => {
+        document.getElementById('cms-modal').classList.add('hidden');
+      });
+      document.querySelectorAll('.cms-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => renderCMSTab(btn.dataset.tab));
+      });
+    });
+  </script>
+</body>
+</html>
